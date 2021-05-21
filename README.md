@@ -6,7 +6,7 @@ This repository contains SQLAlchemy homework for SMU's Data Science Boot Camp, c
 
 ![map_chart](Images/MySQL_Proxy.png)
 
-This is fine for running simple programs within a closed netowrk or a self-contained server, but if this program were o the web or running on an external server, we run into security issues. With the literal SQL querying language wriiten directly into the code, this querying code is exposed on the user end, meaning a hacker could easily modify the query to return any data from the server. Additionally, with the calling of the passwords from the personal system, as in the first cell, confidential information is also vulnerable.
+This is fine for running simple programs within a closed network or a self-contained server, but if this program were on the web or running on an external server, we run into security issues. With the literal SQL querying language wriiten directly into the code, this querying code is exposed on the user end, meaning a hacker could easily modify the query to return any data from the server. Additionally, with the calling of the passwords from the personal system, as in the first cell, confidential information is also vulnerable.
 
 This is why we uses ***SQLAlchemy***, whose code looks more like this:
 
@@ -53,7 +53,7 @@ That data contained in the CSV files is dated from January 1, 2010 to August 23,
 
 # Methods
 
-The data is stored using SQLite, queried using SQLAlchemy and written into a deployable app using flask. Jupyter notebooks, pandas and matplotlib is used to examine and visualize the data
+The data is stored using SQLite, queried using SQLAlchemy and written into a deployable app using flask. Jupyter notebooks, pandas, and matplotlib are used to examine and visualize the data.
 
 # Analysis
 
