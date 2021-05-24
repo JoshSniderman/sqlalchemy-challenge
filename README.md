@@ -19,7 +19,7 @@ With code like this, the user-end is not exposed to code that can directly conne
 This assignment runs an analysis of weather data for a planned vacation to Honolulu, Hawaii. 
 
 
-# Overview of the Data
+## Overview of the Data
 
  The data used for this project includes a CSV file with a list of stations and a CSV file with a list of measurements.
  
@@ -51,7 +51,7 @@ This assignment runs an analysis of weather data for a planned vacation to Honol
 
 That data contained in the CSV files is dated from January 1, 2010 to August 23, 2017 so at the time of this writing is missing almost two years of weather data. Because global temperatures have been observed to have an upward trend, any query based on an aggregated temperature for a particular date can be expected to be lower than what will actually occur.
 
-# Methods
+## Methods
 
 The data is stored using SQLite, queried using SQLAlchemy and written into a deployable app using flask. Jupyter notebooks, pandas, and matplotlib are used to examine and visualize the data.
 
@@ -79,7 +79,7 @@ Again using a date range for a trip, the average daily norms are queried and plo
 ## Trip temperature area chart
 ![temparea](Images/temparea.png)
 
-# Flask Routes
+## Flask Routes
 
 The flask routes prepared are detailed below:
 
