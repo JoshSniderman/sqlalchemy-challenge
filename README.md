@@ -4,13 +4,13 @@
 
 This repository contains SQLAlchemy homework for SMU's Data Science Boot Camp, completed and submitted March 15th. The assignment concerns the usage of the python library ***SQLAlchemy***, which allows for Python control of SQL querying, in a more secure and controlled manner than other SQL-based libraries. Other libraries, such as ***mysql.connector***, use direct querying code, essentially running Jupyter Notebook as a proxy SQL server, such as the example here:
 
-![map_chart](Images/SQL_proxy.png)
+![map_chart](Images/MySQL_Proxy.png)
 
-This is fine for running simple programs within a closed netowrk or a self-contained server, but if this program were o the web or running on an external server, we run into security issues. With the literal SQL querying language wriiten directly into the code, this querying code is exposed on the user end, meaning a hacker could easily modify the query to return any data from the server. Additionally, with the calling of the passwords from the personal system, as in the first cell, confidential information is also vulnerable.
+This is fine for running simple programs within a closed network or a self-contained server, but if this program were on the web or running on an external server, we run into security issues. With the literal SQL querying language wriiten directly into the code, this querying code is exposed on the user end, meaning a hacker could easily modify the query to return any data from the server. Additionally, with the calling of the passwords from the personal system, as in the first cell, confidential information is also vulnerable.
 
 This is why we uses ***SQLAlchemy***, whose code looks more like this:
 
-![map_chart](Images/SQLAlchemy.png)
+![map_chart](Images/SQLAlchemy_example.png)
 
 With code like this, the user-end is not exposed to code that can directly connect to the server. Data can be used by the Notebook without being capable of manipulation.
 
@@ -19,7 +19,7 @@ With code like this, the user-end is not exposed to code that can directly conne
 This assignment runs an analysis of weather data for a planned vacation to Honolulu, Hawaii. 
 
 
-# Overview of the Data
+## Overview of the Data
 
  The data used for this project includes a CSV file with a list of stations and a CSV file with a list of measurements.
  
@@ -51,9 +51,9 @@ This assignment runs an analysis of weather data for a planned vacation to Honol
 
 That data contained in the CSV files is dated from January 1, 2010 to August 23, 2017 so at the time of this writing is missing almost two years of weather data. Because global temperatures have been observed to have an upward trend, any query based on an aggregated temperature for a particular date can be expected to be lower than what will actually occur.
 
-# Methods
+## Methods
 
-The data is stored using SQLite, queried using SQLAlchemy and written into a deployable app using flask. Jupyter notebooks, pandas and matplotlib is used to examine and visualize the data
+The data is stored using SQLite, queried using SQLAlchemy and written into a deployable app using flask. Jupyter notebooks, pandas, and matplotlib are used to examine and visualize the data.
 
 # Analysis
 
@@ -79,7 +79,7 @@ Again using a date range for a trip, the average daily norms are queried and plo
 ## Trip temperature area chart
 ![temparea](Images/temparea.png)
 
-# Flask Routes
+## Flask Routes
 
 The flask routes prepared are detailed below:
 
